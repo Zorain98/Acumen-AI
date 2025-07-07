@@ -1,0 +1,25 @@
+{
+    "servers": {
+      "playwright": {
+        "command": "npx",
+        "args": ["playwright-mcp@latest"]
+      },
+      "duckduckgo-search": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@duckduckgo/mcp-server"
+        ]
+      },
+      "pandas": {
+      "name": "pandas",
+      "type": "stdio",
+      "description": "run pandas code",
+      "isActive": true,
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/server.py"
+      ]
+    }
+    }
+  }
